@@ -2,8 +2,16 @@ version: 2
 jobs:
   build:
     docker:
-      - image: ubuntu:16.04
-      - image: python:2.7
+      - image: python:3.5
+        environment:
+          FLASK_CONFIG: testing
+          DATABASE_URL: postgresql://ubuntu@localhost/circle_test?sslmode=disable
+      - image: postgres:9.5.5
+        environment:
+          POSTGRES_USER: ubuntu
+          POSTGRES_DB: circle_test
+          POSTGRES_PASSWORD: ""
+    working_directory: /home/ubuntu/cci-demo-flask
     steps:
       - checkout
       - run:
@@ -31,9 +39,3 @@ jobs:
           destination: reports
       - store_test_results:
           path: "test-reports/"
-
-
-#https://github.com/barnybug/cli53/releases/download/0.8.7/cli53-linux-amd64
-#$ sudo mv cli53-my-platform /usr/local/bin/cli53
-#$ sudo chmod +x /usr/local/bin/cli53
-#
