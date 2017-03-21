@@ -5,7 +5,7 @@ machine:
   post:
     - mkdir -p $CIRCLE_BUILD_DIR/bin
   python:
-    version: pypy-2.7
+    version: 2.7
 
 dependencies:
   pre:
