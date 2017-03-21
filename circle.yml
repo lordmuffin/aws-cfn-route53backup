@@ -20,7 +20,7 @@ deployment:
     branch: master
     commands:
       - zipfile=~/route53_backups.zip
-      - zip -r9 $zipfile ./route53_backups.py
+      - zip -r9 $zipfile functions/route53_backups.py
       - perl -pi -e '$_ = "#!/usr/bin/python\n" if $. == 1' $VIRTUAL_ENV/bin/cli53
       - (cd $VIRTUAL_ENV/lib/python2.7/site-packages; zip -r9 ~/route53_backups.zip *)
   s3up:
