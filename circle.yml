@@ -2,6 +2,7 @@ machine:
   environment:
     CIRCLE_BUILD_DIR: $HOME/$CIRCLE_PROJECT_REPONAME
     PATH: $PATH:$CIRCLE_BUILD_DIR/bin
+    zipfile: $HOME/route53_backups.zip
   post:
     - mkdir -p $CIRCLE_BUILD_DIR/bin
   #python:
@@ -20,8 +21,6 @@ deployment:
   zip:
     branch: master
     commands:
-      - zipfile=~/route53_backups.zip
-      - zip -r $zipfile
       - git clone https://github.com/lordmuffin/aws-cfn-route53backup
       - zip -r9 $zipfile ~/aws-cfn-route53backup/functions/route53_backups.py
       - perl -pi -e '$_ = "#!/usr/bin/python\n" if $. == 1' $VIRTUAL_ENV/bin/cli53
