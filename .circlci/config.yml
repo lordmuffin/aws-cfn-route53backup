@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: ubuntu:16.10
+      - image: ubuntu:16.04
       - image: python:2.7
     steps:
       - checkout
