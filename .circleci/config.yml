@@ -1,6 +1,10 @@
 version: 2
 jobs:
   build:
+    environment:
+      CIRCLE_BUILD_DIR: $HOME/$CIRCLE_PROJECT_REPONAME
+      PATH: $PATH:$CIRCLE_BUILD_DIR/bin
+    working_directory: $PATH
     docker:
       - image: python:2.7
     steps:
@@ -21,10 +25,6 @@ jobs:
           name: Install VirtualEnv Dependencies
           command: pip install -r virtualenvrequirements.txt
 
-  environment:
-    CIRCLE_BUILD_DIR: $HOME/$CIRCLE_PROJECT_REPONAME
-    PATH: $PATH:$CIRCLE_BUILD_DIR/bin
-  working_directory: $PATH
 
 
 #https://github.com/barnybug/cli53/releases/download/0.8.7/cli53-linux-amd64
