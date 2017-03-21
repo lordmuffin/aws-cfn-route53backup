@@ -14,7 +14,7 @@ dependencies:
     - bin
 test:
   override:
-    - echo "YAY!"
+    - ls -lR $VIRTUAL_ENV
 deployment:
   zip:
     branch: master
