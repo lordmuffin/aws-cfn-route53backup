@@ -6,27 +6,31 @@ jobs:
       - image: python:2.7
     steps:
       - checkout
-      - setup_docker_engine
+      - run:
+          name: Install Yarn
+          command: |
+            apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 68576280 86E50310
+            echo "deb http://deb.nodesource.com/node_7.x jessie main" | tee /etc/apt/sources.list.d/nodesource.list
+            echo "deb http://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+            apt-get update -qq
+            apt-get install -y -qq nodejs yarn
+      - restore_cache:
+          key: projectname-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run:
           name: Install Dependencies
-          command: pip install -r requirements.txt
+          command: yarn && pip install -r requirements.txt
+      - save_cache:
+          key: projectname-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - "/home/ubuntu/.yarn-cache"
       - run:
-          name: Install git
-          command: apt-get install git -y
-      - run:
-          name: Clone Git Repo
-          command: git clone $CIRCLE_REPOSITORY_URL
-      - run:
-          name: Build VirtualEnv
-          command: virtualenv $PATH/virtualenv
-      - run:
-          name: Install VirtualEnv Dependencies
-          command: pip install -r virtualenvrequirements.txt
-
-    environment:
-      CIRCLE_BUILD_DIR: $HOME/$CIRCLE_PROJECT_REPONAME
-      PATH: $PATH:$CIRCLE_BUILD_DIR/bin
-    working_directory: $PATH
+          name: Run Tests
+          command: python manage.py test --coverage
+      - store_artifacts:
+          path: test-reports/coverage
+          destination: reports
+      - store_test_results:
+          path: "test-reports/"
 
 
 #https://github.com/barnybug/cli53/releases/download/0.8.7/cli53-linux-amd64
