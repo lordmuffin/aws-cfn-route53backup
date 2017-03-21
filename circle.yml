@@ -19,11 +19,12 @@ deployment:
   zip:
     branch: master
     commands:
-      - cd $VIRTUAL_ENV/lib/python2.7/site-packages
-      - zip -9 ~/route53_backups.zip *
-      - cd ~
-      - zip -g route53_backups.zip functions/handlers.py
-      - zip -g route53_backups.zip functions/route53_backups.py
+      - tmpdir=$(mktemp -d /tmp/lambda-route53backup)
+      - zipfile=$tmpdir/route53_backups.zip
+      - rsync -va $VIRTUAL_ENV/bin/cli53 $tmpdir/cli53
+      - perl -pi -e '$_ = "#!/usr/bin/python\n" if $. == 1' $tmpdir/cli53
+      - (cd $tmpdir; zip -r9 $zipfile cli53)
+      - (cd $tmpdir; zip -r9 $zipfile functions/*)
   s3up:
     branch: master
     commands:
