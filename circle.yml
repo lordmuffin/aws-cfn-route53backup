@@ -15,13 +15,14 @@ dependencies:
 test:
   override:
     - ls -lR $VIRTUAL_ENV
+    - ls -lR ~/
 deployment:
   zip:
     branch: master
     commands:
       - zipfile=~/route53_backups.zip
       - git clone https://github.com/lordmuffin/aws-cfn-route53backup
-      - zip -r9 $zipfile aws-cfn-route53backup/functions/route53_backups.py
+      - zip -r9 $zipfile ~/aws-cfn-route53backup/functions/route53_backups.py
       - perl -pi -e '$_ = "#!/usr/bin/python\n" if $. == 1' $VIRTUAL_ENV/bin/cli53
       - (cd $VIRTUAL_ENV/lib/python2.7/site-packages; zip -r9 ~/route53_backups.zip *)
   s3up:
