@@ -1,0 +1,34 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: python:2.7
+      - image: ubuntu:16.10
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: pip install -r requirements.txt
+      - run:
+          name: Install git
+          command: apt-get install git -y
+      - run:
+          name: Clone Git Repo
+          command: git clone $CIRCLE_REPOSITORY_URL
+      - run:
+          name: Build VirtualEnv
+          command: virtualenv $PATH/virtualenv
+      - run:
+          name: Install VirtualEnv Dependencies
+          command: pip install -r virtualenvrequirements.txt
+
+    environment:
+      CIRCLE_BUILD_DIR: $HOME/$CIRCLE_PROJECT_REPONAME
+      PATH: $PATH:$CIRCLE_BUILD_DIR/bin
+    working_directory: $PATH
+
+
+#https://github.com/barnybug/cli53/releases/download/0.8.7/cli53-linux-amd64
+#$ sudo mv cli53-my-platform /usr/local/bin/cli53
+#$ sudo chmod +x /usr/local/bin/cli53
+#
