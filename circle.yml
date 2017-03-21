@@ -19,11 +19,10 @@ deployment:
   zip:
     branch: master
     commands:
-      - tmpdir=$(mktemp -d /tmp/lambda-XXXXXX)
-      - zipfile=$tmpdir/route53_backups.zip
+      - zipfile=~/route53_backups.zip
       - perl -pi -e '$_ = "#!/usr/bin/python\n" if $. == 1' $VIRTUAL_ENV/bin/cli53
-      - (cd $tmpdir; zip -r9 $zipfile $VIRTUAL_ENV/bin/cli53)
-      - (cd $tmpdir; zip -r9 $zipfile functions/*)
+      - (cd $VIRTUAL_ENV/lib/python2.7/site-packages; zip -r9 ~/route53_backups.zip *)
+      - (cd ~; zip -r9 $zipfile ./route53_backups.py)
   s3up:
     branch: master
     commands:
