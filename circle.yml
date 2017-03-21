@@ -21,8 +21,6 @@ deployment:
     commands:
       - cd $VIRTUAL_ENV/lib/python2.7/site-packages
       - zip -9 ~/route53_backups.zip *
-      - cd $VIRTUAL_ENV/lib64/python2.7/site-packages
-      - zip -r9 ~/route53_backups.zip *
       - cd ~
       - zip -g route53_backups.zip functions/handlers.py
       - zip -g route53_backups.zip functions/route53_backups.py
