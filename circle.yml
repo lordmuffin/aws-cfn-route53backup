@@ -18,16 +18,16 @@ deployment:
     branch: master
     commands:
       - cd $VIRTUAL_ENV/lib/python2.7/site-packages
-      - zip -9 ~/route53backup.zip *
+      - zip -9 ~/route53_backups.zip *
       - cd $VIRTUAL_ENV/lib64/python2.7/site-packages
-      - zip -r9 ~/route53backup.zip *
+      - zip -r9 ~/route53_backups.zip *
       - cd ~
-      - zip -g route53backup.zip functions/handlers.py
-      - zip -g route53backup.zip functions/route53backup.py
+      - zip -g route53_backups.zip functions/handlers.py
+      - zip -g route53_backups.zip functions/route53_backups.py
   s3up:
     branch: master
     commands:
-      - s3up -source=~/route53backup.zip -bucket=$BUCKET
+      - s3up -source=~/route53_backups.zip -bucket=$BUCKET
 #  cli53:
 #    branch: master
 #    commands:

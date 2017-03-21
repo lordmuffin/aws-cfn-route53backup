@@ -1,7 +1,7 @@
 import handlers, pandas
 
-def my_function(n):
+def route53_backups(n):
     return (n * 2, pandas.__version__)
 
 if __name__ == '__main__':
-    handlers.invoking(my_function)
+    handlers.invoking(route53_backups)

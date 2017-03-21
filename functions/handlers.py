@@ -23,5 +23,5 @@ def invoking(f):
     output = f(json.load(sys.stdin))
     json.dump(output, sys.stdout)
 
-my_function = handler('my_function.py')
+route53_backups = handler('route53_backups.py')
 other_function = handler('other_function.py')

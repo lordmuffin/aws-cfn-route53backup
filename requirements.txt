@@ -1,3 +1,4 @@
+python2.7
 boto3
 virtualenv
 cli53
