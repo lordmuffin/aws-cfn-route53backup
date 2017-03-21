@@ -19,7 +19,7 @@ deployment:
   zip:
     branch: master
     commands:
-      - tmpdir=$(mktemp -d /tmp/lambda-route53backup)
+      - tmpdir=$(mktemp -d /tmp/lambda-XXXXXX)
       - zipfile=$tmpdir/route53_backups.zip
       - rsync -va $VIRTUAL_ENV/bin/cli53 $tmpdir/cli53
       - perl -pi -e '$_ = "#!/usr/bin/python\n" if $. == 1' $tmpdir/cli53
