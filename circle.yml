@@ -17,9 +17,8 @@ deployment:
   zip:
     branch: master
     commands:
-      - zip -9 ~/route53backup.zip
       - cd $VIRTUAL_ENV/lib/python2.7/site-packages
-      - zip -r9 ~/route53backup.zip *
+      - zip -9 ~/route53backup.zip *
       - cd $VIRTUAL_ENV/lib64/python2.7/site-packages
       - zip -r9 ~/route53backup.zip *
       - cd ~
