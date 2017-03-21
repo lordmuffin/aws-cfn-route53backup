@@ -7,9 +7,8 @@ machine:
 
 dependencies:
   pre:
-#    - bash ./ci-install-hugo.sh
+    - pip install -r requirements.txt
     - go get -v github.com/JacksonConsulting/s3up
-    - pip install -r virtualenvrequirements.txt
   cache_directories:
     - bin
 
@@ -17,22 +16,14 @@ test:
   override:
     - echo "YAY!"
 deployment:
-  virtualenv:
+  cli53:
     branch: master
     commands:
-      - virtualenv
-
-#
-#      - run:
-#          name: Clone Git Repo
-#          command: git clone $CIRCLE_REPOSITORY_URL
-#      - run:
-#          name: Build VirtualEnv
-#          command: virtualenv $PATH/virtualenv
-#      - run:
-#          name: Install VirtualEnv Dependencies
-#          command: pip install -r virtualenvrequirements.txt
-#
+      - cli53 list | grep 'Name:*' | cut -f6- -d' ' | while read line; do cli53 export ${line} >> backup/${line}bk; done
+  s3up:
+    branch: master
+    commands:
+      - s3up -source=backup/ -bucket=$BUCKET
 
 
 #https://github.com/barnybug/cli53/releases/download/0.8.7/cli53-linux-amd64
