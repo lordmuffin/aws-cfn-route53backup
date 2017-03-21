@@ -15,9 +15,10 @@ test:
     - echo "YAY!"
 deployment:
   base:
-    branch: release
+    branch: master
     commands:
       - ./build-base-env.sh
+
 #  cli53:
 #    branch: master
 #    commands:

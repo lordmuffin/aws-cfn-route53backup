@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-pip install numpy
-pip install scipy
-pip install pandas
 for dir in lib64/python2.7/site-packages \
              lib/python2.7/site-packages
 do
