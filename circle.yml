@@ -1,0 +1,41 @@
+machine:
+  environment:
+    CIRCLE_BUILD_DIR: $HOME/$CIRCLE_PROJECT_REPONAME
+    PATH: $PATH:$CIRCLE_BUILD_DIR/bin
+  post:
+    - mkdir -p $CIRCLE_BUILD_DIR/bin
+
+dependencies:
+  pre:
+    - bash ./ci-install-hugo.sh
+    - go get -v github.com/JacksonConsulting/s3up
+    - pip install -r virtualenvrequirements.txt
+  cache_directories:
+    - bin
+
+test:
+  override:
+    - echo "YAY!"
+deployment:
+  virtualenv:
+    branch: master
+    commands:
+      - virtualenv
+
+#
+#      - run:
+#          name: Clone Git Repo
+#          command: git clone $CIRCLE_REPOSITORY_URL
+#      - run:
+#          name: Build VirtualEnv
+#          command: virtualenv $PATH/virtualenv
+#      - run:
+#          name: Install VirtualEnv Dependencies
+#          command: pip install -r virtualenvrequirements.txt
+#
+
+
+#https://github.com/barnybug/cli53/releases/download/0.8.7/cli53-linux-amd64
+#$ sudo mv cli53-my-platform /usr/local/bin/cli53
+#$ sudo chmod +x /usr/local/bin/cli53
+#
