@@ -7,23 +7,28 @@ machine:
 
 dependencies:
   pre:
-    - pip install -r requirements.txt
     - go get -v github.com/JacksonConsulting/s3up
   cache_directories:
     - bin
-
 test:
   override:
     - echo "YAY!"
 deployment:
-  cli53:
-    branch: master
+  release:
+    branch: releases
     commands:
-      - cli53 list | grep 'Name:*' | cut -f6- -d' ' | while read line; do cli53 export ${line} >> backup/${line}bk; done
-  s3up:
-    branch: master
-    commands:
-      - s3up -source=backup/ -bucket=$BUCKET
+      - git push --set-upstream origin ${CIRCULE_BRANCH}
+      - git config --global user.email "dorkmeisterx69@gmail.com"
+      - git config --global user.name "CircleCI"
+
+#  cli53:
+#    branch: master
+#    commands:
+#      - cli53 list | grep 'Name:*' | cut -f6- -d' ' | while read line; do cli53 export ${line} >> backup/${line}bk; done
+#  s3up:
+#    branch: master
+#    commands:
+#      - s3up -source=backup/ -bucket=$BUCKET
 
 
 #https://github.com/barnybug/cli53/releases/download/0.8.7/cli53-linux-amd64
