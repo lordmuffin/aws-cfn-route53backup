@@ -4,6 +4,8 @@ machine:
     PATH: $PATH:$CIRCLE_BUILD_DIR/bin
   post:
     - mkdir -p $CIRCLE_BUILD_DIR/bin
+  python:
+    version: pypy-2.7
 
 dependencies:
   pre:
