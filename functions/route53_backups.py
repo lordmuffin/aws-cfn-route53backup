@@ -5,6 +5,7 @@ import urllib2
 import boto3
 import subprocess
 import cli53
+import json
 s3 = boto3.resource('s3')
 
 def lambda_handler(event, context):
