@@ -13,7 +13,7 @@ def lambda_handler(event, context):
     print "event.dump = " + json.dumps(event)
     responseData = {}
     command = ["./cli53", "list"]
-    subprocess.check_output(command, stderr=subprocess.STDOUT)
+    print(subprocess.check_output(command, stderr=subprocess.STDOUT))
     # If not valid cloudformation custom resource call
     try:
         command = ["./cli53", "list"]
