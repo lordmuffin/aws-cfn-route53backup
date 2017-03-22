@@ -23,11 +23,6 @@ def lambda_handler(event, context):
 
 
 
-aws route53 list-hosted-zones --profile edc-coreinfra-prod
-
-
-
-
 #import subprocess
 #command = ["./cli53", "list"]
 #print(subprocess.check_output(command, stderr=subprocess.STDOUT))
