@@ -1,0 +1,769 @@
+{
+    "HostedZones": [
+        {
+            "ResourceRecordSetCount": 48, 
+            "CallerReference": "B9E9EC3B-1C73-0418-B5C2-CB872AD6D151", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZPTR6FQO2GQKG", 
+            "Name": "entrustdatacard.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 6, 
+            "CallerReference": "CAC86B7B-A62E-B1C1-B609-FD2436E4BF19", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z2L5WW6P4XAQ4N", 
+            "Name": "entrustdatacard.de."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "6227ABC5-EA47-E6CB-ACE6-EE0D6BFDEAB9", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z3RHD0B67YMO4M", 
+            "Name": "cygnacom.ca."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "B75509D2-3D6F-98D6-BF25-E3D3294741D2", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z3RDHYJWN95MEJ", 
+            "Name": "badging.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "40EB214A-5EAA-83ED-B6FA-57DC8646BE01", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z9DYHVUN6K2S6", 
+            "Name": "datacard.ca."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "1C32EF97-C370-457C-8082-3B07DEB30985", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z10NSF0ES4I20U", 
+            "Name": "datacard.co.in."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "6D0B2CD4-C177-52B6-ABF4-AB63C6B630B9", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z2Z4UDP71BZ4XO", 
+            "Name": "datacard.co.nz."
+        }, 
+        {
+            "ResourceRecordSetCount": 7, 
+            "CallerReference": "06CE80F4-421C-1B78-A1D3-CD68268E2283", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z34CXIUPDDQFEI", 
+            "Name": "datacard.co.jp."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "AF20ADAA-D7F4-E710-8521-FAFDA8E496EF", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1ZJKQVCEBB0V0", 
+            "Name": "datacard.co.uk."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "79F9B43B-1091-2ABA-B191-686DC914EAE2", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1PAJ9O8EFCWG5", 
+            "Name": "datacard.de."
+        }, 
+        {
+            "ResourceRecordSetCount": 135, 
+            "CallerReference": "69D23C58-AA6D-EEA5-8066-C41ABE1416D0", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1PD12J30WHG9L", 
+            "Name": "datacard.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "77B75E0E-2E51-2B64-87CA-CFAD5DA43F9A", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1OZNIMMN1KTOO", 
+            "Name": "datacard.com.mx."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "63541F37-984D-F5DB-AB3F-347487CE8EF7", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z21ZUSU7ERXFNK", 
+            "Name": "datacard.jp."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "D62C9E09-5134-4CA0-B47D-595FCE082071", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z2IZERDBAACEHT", 
+            "Name": "datacard.es."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "10511455-D02B-C307-A04A-E74C3F063182", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1IMRT3NFAQR1B", 
+            "Name": "datacard.fr."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "7C6212F0-7BEF-5926-9E0E-8A06AA80A11D", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZCNAUKXVWEIAN", 
+            "Name": "datacardprinter.co.in."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "F9547940-5AA9-3E2D-89F3-CBFA4FDA2141", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZMLTY9O4N3X83", 
+            "Name": "datacarddirect.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "7EBB3500-A5BF-5972-B477-5F9BB2877966", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z3CSLX3NYSMKKK", 
+            "Name": "datacardprinters.co.in."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "AC2EDFEB-338F-AD5A-9279-F6DA24E45D37", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZSGFL9R4EMJMP", 
+            "Name": "datacardworldwide.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "9403F93C-1CC8-57BC-9B8F-56E460643C27", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1RH5MFMHQPBF9", 
+            "Name": "dc-j.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "65B1BFA1-AF06-3EFE-B2B5-FC9A1C162DF1", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z15RX4RNZ3DVXE", 
+            "Name": "datacardgroup.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "FFA12FFF-2EBC-4364-9B3E-EE81B03262E3", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z22O0C9X8T673", 
+            "Name": "id-works.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 12, 
+            "CallerReference": "244ECCA2-036E-C21A-8E3A-6940AFCEC667", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z85ST3AD7TW4W", 
+            "Name": "partnerpage.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "94AAE9CB-E242-9C16-AF95-4AAD09D87C45", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZCWFUPFOLXDSF", 
+            "Name": "photoids.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "DFA47AFB-200F-E798-9317-F83ED13CD1B5", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1Q2JUJVMR1EG4", 
+            "Name": "secureidentity.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "120170DF-CD6E-15B3-96E6-F194D3322860", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZHI1XDIS58JBR", 
+            "Name": "smartids.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "92C94D12-007A-90FB-B67F-E2FEADB00D29", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1WU7ONPPPI3RT", 
+            "Name": "datacard.com.br."
+        }, 
+        {
+            "ResourceRecordSetCount": 2, 
+            "CallerReference": "C7199E75-EAB2-35B4-9EDF-4A906DD3EC58", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z36VN5R5L2XXH1", 
+            "Name": "entrustdatacard.co.in."
+        }, 
+        {
+            "ResourceRecordSetCount": 2, 
+            "CallerReference": "13BD062B-2E3A-C5EE-85D2-876DB6653B56", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZLY3Q5VE149KW", 
+            "Name": "entrustdatacard.ca."
+        }, 
+        {
+            "ResourceRecordSetCount": 3, 
+            "CallerReference": "6AB1B025-D8B4-C074-8D79-8D58A324659F", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z3D8JZLX9EZYAZ", 
+            "Name": "datacard.ie."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "FCABC489-81B7-8B86-AFC4-7275A4C316D9", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z13QBX6LUY5HGI", 
+            "Name": "entrustdatacard.com.br."
+        }, 
+        {
+            "ResourceRecordSetCount": 2, 
+            "CallerReference": "40132290-2FAA-0864-BB8D-8DA928750EBE", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z2U0E34DTGOA1V", 
+            "Name": "entrustdatacard.es."
+        }, 
+        {
+            "ResourceRecordSetCount": 2, 
+            "CallerReference": "6E8D2C25-0EFC-1834-8B9B-3BFB67FF2A9E", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZJQOLLKK6AF4T", 
+            "Name": "entrustdatacard.co.uk."
+        }, 
+        {
+            "ResourceRecordSetCount": 2, 
+            "CallerReference": "2FB46C35-0A5A-E46E-BDB9-E6929DDDD233", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z32SL61Y9AVAPL", 
+            "Name": "entrustdatacard.com.au."
+        }, 
+        {
+            "ResourceRecordSetCount": 2, 
+            "CallerReference": "F2FF9B90-DF6C-650B-A5F7-F2CABD465BB0", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z27PIQFBUL4F70", 
+            "Name": "entrustdatacard.fr."
+        }, 
+        {
+            "ResourceRecordSetCount": 2, 
+            "CallerReference": "92DE6AFC-F8DF-F05C-A413-F285C43C9BC4", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z3VXZCN0AT8DAP", 
+            "Name": "entrustdatacard.mx."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "CF7BDC1F-C659-A7FD-8DE5-00557DE410CA", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z248F4MJYZSOA2", 
+            "Name": "entrustdatacard.ru."
+        }, 
+        {
+            "ResourceRecordSetCount": 2, 
+            "CallerReference": "1B040959-79A4-47EA-8A5D-EE2CEA384FA7", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1VAKGITHHYUJ7", 
+            "Name": "entrustdatacard.kr."
+        }, 
+        {
+            "ResourceRecordSetCount": 2, 
+            "CallerReference": "1BBB5698-33F9-9FF2-9CCA-DDF66E46E746", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z81RTW1I0CQOH", 
+            "Name": "entrustdatacard.jp."
+        }, 
+        {
+            "ResourceRecordSetCount": 2, 
+            "CallerReference": "A5A40E68-8353-3B9B-A780-BE9D201E6BA6", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z21WFEITC829EZ", 
+            "Name": "entrustdatacard.sg."
+        }, 
+        {
+            "ResourceRecordSetCount": 2, 
+            "CallerReference": "F3042560-3730-DD51-B427-2D36E8E8B9DF", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1PKFVSCE4Q9JT", 
+            "Name": "entrustdatacardchina.com.cn."
+        }, 
+        {
+            "ResourceRecordSetCount": 2, 
+            "CallerReference": "700F3163-D517-3E8F-B96C-2999E385B702", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1BFV5P4FFPWF6", 
+            "Name": "entrustdatacardchina.cn."
+        }, 
+        {
+            "ResourceRecordSetCount": 2, 
+            "CallerReference": "74101836-330E-DE63-B341-806B415E4E02", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z3KTVOSCZE1RIB", 
+            "Name": "entrustdatacardprinters.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 12, 
+            "CallerReference": "1884CF49-0D39-1914-BBEA-633334CB5F54", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1N61GA6VQNGXK", 
+            "Name": "demo.entrustdatacard.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 7, 
+            "CallerReference": "C2130794-1750-73B9-A701-7DBDB9115BAC", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1ST1T97U35602", 
+            "Name": "80.124.204.in-addr.arpa."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "0E63D09A-772A-7EC2-840C-DE893C562A6F", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZBQ4RLCLWAS7E", 
+            "Name": "81.124.204.in-addr.arpa."
+        }, 
+        {
+            "ResourceRecordSetCount": 8, 
+            "CallerReference": "DA2AC2D3-5366-9EAA-B8B3-EBC91384A308", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z198480GX1JOWI", 
+            "Name": "82.124.204.in-addr.arpa."
+        }, 
+        {
+            "ResourceRecordSetCount": 2, 
+            "CallerReference": "6E1D55ED-A48E-7A95-A49D-ECE907C9E46F", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1UQSHB4O4WRK3", 
+            "Name": "214.26.192.in-addr.arpa."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "31F924C8-C23D-6268-B8D3-CC3B0EA65513", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z2I6BV6APEGNAV", 
+            "Name": "vianetdemo.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 5, 
+            "CallerReference": "B0263CEC-5C4F-6336-A810-FB1532539A63", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1EICR7N9OJXHO", 
+            "Name": "instantissuance.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "2D8E5A18-EB17-8668-9FB2-10190D1E7BCD", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z39GAG8XX13E14", 
+            "Name": "secureissuanceanywhere.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 8, 
+            "CallerReference": "1C271E7E-B918-AE96-ACBD-4DC8ECFB70EB", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z35EM17QQRJTXH", 
+            "Name": "anygov.net."
+        }, 
+        {
+            "ResourceRecordSetCount": 11, 
+            "CallerReference": "1879B678-BB81-7E34-8D86-9696EEB27660", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z3OXW9Q1YF433P", 
+            "Name": "businesssignatures.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "DCA0E0D5-803E-F1D1-905A-C14D842F547D", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z33S5C7DNWTAA3", 
+            "Name": "cygnacom.xxx."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "5ED94434-F8E9-77A1-A1C3-38117C34D170", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1WQ5G3YWOYMG", 
+            "Name": "entrust.asia."
+        }, 
+        {
+            "ResourceRecordSetCount": 13, 
+            "CallerReference": "DC0D7F65-66E1-30BE-9B33-3F70FF0666E4", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z2X9HN1QTDFLE0", 
+            "Name": "entrust.ch."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "28EF37E2-8F71-92ED-B6B7-71BED4AB8A64", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1WEP7EGH4WFKR", 
+            "Name": "entrust.ca."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "E5DD2D17-8D3B-234F-AEF1-0DBE26E153A1", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z229DJV49VIXS", 
+            "Name": "entrust.de."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "35FD7AF5-5171-A70B-B9DF-8B51D739F5C8", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z337OL7CS06LB", 
+            "Name": "entrust.co."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "C3A23233-982C-3AD0-9DA1-C5299619E975", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z3IU48MN4UW1HQ", 
+            "Name": "entrust.org."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "59971D13-AB53-684A-B3BC-3A280F065C28", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1M0D499ELMHZ", 
+            "Name": "entrust.tv."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "40C4AB88-BE6C-839E-B5A2-F7089B30ACC3", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z11ERU3F9CYCGO", 
+            "Name": "fraudintelligencenetwork.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "050DAD32-48C8-2230-AA82-AF7B942898E5", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z2Y104SOYS9YD0", 
+            "Name": "fraudintelligence.net."
+        }, 
+        {
+            "ResourceRecordSetCount": 532, 
+            "CallerReference": "512AA819-5622-BD53-B4C4-C5FA4A82AA63", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZWEZNAY0BR2PC", 
+            "Name": "entrust.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "48AAC05E-ED28-87B1-ABD4-E708E1CB5166", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1GVCY1YSE0TN8", 
+            "Name": "onestopcertshop.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "B3BE5C6A-AC88-BE36-ABB6-C862E1A40018", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z7JTX201BDWZ4", 
+            "Name": "openfraudnetwork.co."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "F1BC7DF3-798D-57C0-83FC-05EF7C9A18A8", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZPRU83EIGZUAA", 
+            "Name": "openfraudnetwork.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "BE9026E9-16E9-23D5-B72E-5B7F454794B5", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1T5JQW5M60AVN", 
+            "Name": "secureyourdigitallife.info."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "D57E3695-1F17-553C-99B9-C1749276EFB5", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZV3E9AEOIA4NF", 
+            "Name": "openfraudnetwork.net."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "7409155D-C042-2227-8BB5-CD33EF4731AC", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z3T1DMLZIF2S2E", 
+            "Name": "openfraudnetwork.org."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "38A72201-972D-D8FD-8A49-A9CE487D0548", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZI3GWHEUG051Y", 
+            "Name": "securingyourdigitallife.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "AE9EF856-4685-4062-BA93-C12837ED6A1E", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZWD526NRL3SIG", 
+            "Name": "secureyourdigitallife.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 3, 
+            "CallerReference": "57155858-19C2-1567-8C24-272A0B1F8F67", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z36FX36O3F0KRW", 
+            "Name": "testcertificates.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 52, 
+            "CallerReference": "67CEAF6F-BC63-E792-B836-7EDE65EE0F54", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1K8NYBCJPQDLV", 
+            "Name": "yourcorp.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "0D3C0238-ECB2-7706-819E-E02948E49687", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZSDJYFI2AMQVJ", 
+            "Name": "truepass.com."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "7747A38F-883A-318E-947C-BFFDBBEE3750", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z2V93IHGZVF7GF", 
+            "Name": "yourcorp.xxx."
+        }, 
+        {
+            "ResourceRecordSetCount": 247, 
+            "CallerReference": "17EE499D-619A-927F-82CF-1AD8E5B0BA18", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z2LA84YUZUHW5U", 
+            "Name": "118.191.216.in-addr.arpa."
+        }, 
+        {
+            "ResourceRecordSetCount": 256, 
+            "CallerReference": "5F38C8CE-1D64-C8CB-8619-4C8207986267", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z2MW7XMQ254VXD", 
+            "Name": "194.46.66.in-addr.arpa."
+        }, 
+        {
+            "ResourceRecordSetCount": 83, 
+            "CallerReference": "9434BD95-E957-75C1-BF68-24686F92C702", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/ZAU8RDQ33516Y", 
+            "Name": "249.5.12.in-addr.arpa."
+        }, 
+        {
+            "ResourceRecordSetCount": 256, 
+            "CallerReference": "C2F094F9-2118-1F91-A7BB-66721B6009DC", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z2DH4NBOQ289GT", 
+            "Name": "221.46.66.in-addr.arpa."
+        }, 
+        {
+            "ResourceRecordSetCount": 8, 
+            "CallerReference": "E13B672B-C925-D0BD-B7EA-B9B965D2CA54", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z19V67V21YYUEW", 
+            "Name": "24-29.248.191.216.in-addr.arpa."
+        }, 
+        {
+            "ResourceRecordSetCount": 41, 
+            "CallerReference": "41D7FFEC-E6D1-6DA0-9A86-566A2123D8B1", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1UO7NFUUL0TFR", 
+            "Name": "253.191.216.in-addr.arpa."
+        }, 
+        {
+            "ResourceRecordSetCount": 39, 
+            "CallerReference": "CC29FB8E-DAF9-F52C-B202-F556362EA924", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z2DU8FMXC3WSEP", 
+            "Name": "252.191.216.in-addr.arpa."
+        }, 
+        {
+            "ResourceRecordSetCount": 32, 
+            "CallerReference": "AF2C0E72-12D9-AD51-9229-5AB216F8E103", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1HVTJJE8OBPKW", 
+            "Name": "32-27.251.191.216.in-addr.arpa."
+        }, 
+        {
+            "ResourceRecordSetCount": 4, 
+            "CallerReference": "C4CBBED0-9520-5340-AEF2-F2C1E06BD594", 
+            "Config": {
+                "PrivateZone": false
+            }, 
+            "Id": "/hostedzone/Z1B6XX1XEGJDU7", 
+            "Name": "cardwizard.com."
+        }
+    ]
+}
