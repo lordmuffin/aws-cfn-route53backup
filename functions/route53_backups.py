@@ -1,6 +1,5 @@
 import subprocess
-command = ["./cli53", "list", "|", "grep", "'Name:*'", "|",
-           source_dir + "/", "s3://" + to_bucket + "/"]
+command = ["./cli53", "list"]
 print(subprocess.check_output(command, stderr=subprocess.STDOUT))
 
 
