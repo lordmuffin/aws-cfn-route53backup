@@ -1,4 +1,3 @@
 boto3
 virtualenv
 cli53
-cfnresponse
