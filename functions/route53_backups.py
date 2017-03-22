@@ -1,7 +1,36 @@
+#!/usr/bin/python
+# Written by: Andrew Jackson
+# This is used to pull repo from github and drop to S3
+import urllib2
+import boto3
 import subprocess
-command = ["./cli53", "list"]
-print(subprocess.check_output(command, stderr=subprocess.STDOUT))
+import cli53
+s3 = boto3.resource('s3')
 
+def lambda_handler(event, context):
+    print "event.dump = " + json.dumps(event)
+    responseData = {}
+    # If not valid cloudformation custom resource call
+    try:
+        command = ["./cli53", "list"]
+        subprocess.check_output(command, stderr=subprocess.STDOUT)
+        cfnresponse.send(event, context, cfnresponse.SUCCESS, responseData, ".zip pulled to S3 Bucket!")
+    except Exception:
+        cfnresponse.send(event, context, cfnresponse.FAILED, responseData, "Bucket Name and Key are all required.")
+        print "ERROR"
+
+
+
+
+
+
+
+
+
+#import subprocess
+#command = ["./cli53", "list"]
+#print(subprocess.check_output(command, stderr=subprocess.STDOUT))
+#
 
 #  cli53:
 #    branch: master
