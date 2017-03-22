@@ -2,7 +2,7 @@ machine:
   environment:
     CIRCLE_BUILD_DIR: $HOME/$CIRCLE_PROJECT_REPONAME
     PATH: $PATH:$CIRCLE_BUILD_DIR/bin
-    zipfile: $HOME/route53_backups.zip
+    zipfile: $HOME/upload/route53_backups.zip
   post:
     - mkdir -p $CIRCLE_BUILD_DIR/bin
   #python:
@@ -20,4 +20,4 @@ deployment:
   s3up:
     branch: master
     commands:
-      - s3up -source=$zipfile -bucket=$BUCKET
+      - s3up -source=upload/ -bucket=$BUCKET
