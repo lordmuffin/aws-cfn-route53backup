@@ -20,4 +20,4 @@ deployment:
   s3up:
     branch: master
     commands:
-      - s3up -source=upload/ -bucket=$BUCKET
+      - s3up -source=$HOME/upload/ -bucket=$BUCKET
