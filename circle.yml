@@ -20,7 +20,7 @@ deployment:
   s3up:
     branch: master
     commands:
-      - s3up -source=$HOME/route53_backups.zip -bucket=$BUCKET
+      - s3up -source=$zipfile -bucket=$BUCKET
 #  cli53:
 #    branch: master
 #    commands:
