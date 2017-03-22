@@ -16,9 +16,9 @@ def lambda_handler(event, context):
     try:
         command = ["./cli53", "list"]
         subprocess.check_output(command, stderr=subprocess.STDOUT)
-        cfnresponse.send(event, context, cfnresponse.SUCCESS, responseData, ".zip pulled to S3 Bucket!")
+        #cfnresponse.send(event, context, cfnresponse.SUCCESS, responseData, ".zip pulled to S3 Bucket!")
     except Exception:
-        cfnresponse.send(event, context, cfnresponse.FAILED, responseData, "Bucket Name and Key are all required.")
+        #cfnresponse.send(event, context, cfnresponse.FAILED, responseData, "Bucket Name and Key are all required.")
         print "ERROR"
 
 
