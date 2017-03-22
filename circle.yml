@@ -14,14 +14,9 @@ dependencies:
   cache_directories:
     - bin
 test:
-  override:
-    - ls -lR $VIRTUAL_ENV
-    - ls -lR ~/
-deployment:
-  zip:
-    branch: master
-    commands:
+  pre:
       - bash ./lambdazip.sh
+deployment:
   s3up:
     branch: master
     commands:
