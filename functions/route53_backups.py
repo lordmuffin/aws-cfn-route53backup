@@ -8,20 +8,9 @@ import cfnresponse
 s3 = boto3.resource('s3')
 
 def lambda_handler(event, context):
-    #os.environ['BUCKET_NAME'] = event['bucket_name']
-    print "event.dump = " + json.dumps(event)
-    # If not valid cloudformation custom resource call
-    try:
-        import subprocess
-        command = ["./aws", "route53", "list-hosted-zones"]
-        print(subprocess.check_output(command, stderr=subprocess.STDOUT))
-        #cfnresponse.send(event, context, cfnresponse.SUCCESS, responseData, ".zip pulled to S3 Bucket!")
-    except Exception:
-        #cfnresponse.send(event, context, cfnresponse.FAILED, responseData, "Bucket Name and Key are all required.")
-        print "ERROR"
-
-
-
+    import subprocess
+    command = ["./aws", "route53", "list-hosted-zones"]
+    print(subprocess.check_output(command, stderr=subprocess.STDOUT))
 
 #import subprocess
 #command = ["./cli53", "list"]
