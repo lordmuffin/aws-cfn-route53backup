@@ -4,7 +4,7 @@
 (echo "### Make Zip Folder"; sudo mkdir $HOME/upload; )
 (echo "### Download cli53"; sudo wget -O $HOME/cli53-linux-386 https://github.com/barnybug/cli53/releases/download/0.8.7/cli53-linux-386; sudo chmod +x $HOME/cli53-linux-386)
 (echo "### Copying AWSCLI"; sudo rsync -va "$VIRTUAL_ENV/bin/aws" "$HOME/aws/"; sudo perl -pi -e '$_ = "#!/usr/bin/python\n" if $. == 1' $HOME/aws/aws)
-(echo "### Rename and zip cli53"; sudo mv $HOME/cli53-linux-386 $HOME/aws/cli53; sudo zip -r9 $zipfile $HOME/aws/cli53)
+(echo "### Rename and zip cli53"; sudo mv $HOME/cli53-linux-386 $HOME/aws/cli53)
 (echo "### Zipping AWSCLI"; cd $HOME/aws; sudo zip -r9 $zipfile *)
 (echo "### Zipping Lambda Files";cd ~/aws-cfn-route53backup/functions/; sudo zip -r9 $zipfile *)
 (echo "### Zipping Site-Packages"; cd $VIRTUAL_ENV/lib/python2.7/site-packages; sudo zip -r9 $zipfile *)
