@@ -9,7 +9,8 @@ s3 = boto3.resource('s3')
 
 def lambda_handler(event, context):
     import subprocess
-    command = ["./cli53", "list"]
+    command = ["./cli53", "list", "|", "grep", "'Name:*'", "|", "cut", "-f6-", "-d'", "'", "|", "while", "read",
+                "line", ";", "do", "cli53", "export", "${line}"]
     print(subprocess.check_output(command, stderr=subprocess.STDOUT))
 
 #import subprocess
