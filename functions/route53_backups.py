@@ -9,7 +9,7 @@ s3 = boto3.resource('s3')
 
 def lambda_handler(event, context):
     import subprocess
-    command = ["./aws", "route53", "list-hosted-zones"]
+    command = ["./cli53", "list"]
     print(subprocess.check_output(command, stderr=subprocess.STDOUT))
 
 #import subprocess
