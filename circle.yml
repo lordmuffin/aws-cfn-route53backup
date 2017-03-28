@@ -12,7 +12,6 @@ machine:
 dependencies:
   pre:
     - go get -v github.com/JacksonConsulting/s3up
-    - go get github.com/barnybug/cli53/cmd/cli53
   cache_directories:
     - bin
 test:
