@@ -1,4 +1,6 @@
 #!/bin/bash
+ls ~/.local/
+which aws
 (echo "### Running Git Clone"; git clone $CIRCLE_REPOSITORY_URL ~/aws-cfn-route53backup)
 (echo "### Zipping AWSCLI"; rsync -va $virtualenv/bin/aws ~/aws; perl -pi -e '$_ = "#!/usr/bin/python\n" if $. == 1' ~/aws; cd ~/; sudo zip -r9 $zipfile aws)
 (echo "### Zipping Lambda Files"; sudo mkdir $HOME/upload; cd ~/aws-cfn-route53backup/functions/; sudo zip -r9 $zipfile *)
