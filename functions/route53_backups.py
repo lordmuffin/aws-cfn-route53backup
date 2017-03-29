@@ -21,6 +21,7 @@ def lambda_handler(event, context):
     args = shlex.split(command)
     print args
     p = subprocess.Popen(args) # Success!
+    print(subprocess.Popen(args))
 
 
 
