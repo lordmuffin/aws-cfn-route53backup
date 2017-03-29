@@ -38,8 +38,9 @@ def newSplit(value):
 
 def lambda_handler(event, context):
     print "event.dump = " + json.dumps(event)
-    command = "./cli53 export --full " + event["hostedZoneId"]
-    filename = event["hostedZoneId"]
+    command = "./cli53 export --full " + event["detail"]["requestParameters"]["hostedZoneId"]
+    filename = event["detail"]["requestParameters"]["hostedZoneId"]
+    bucket_name = "prod-route53-backups"
     output, err, exit_code = run(command)
     if exit_code != 0:
         print "Output:"
@@ -52,7 +53,7 @@ def lambda_handler(event, context):
         print "Output:"
         print output
         print "Upload to S3:"
-        s3.Bucket(event["bucket_name"]).put_object(Key=filename, Body=output)
+        s3.Bucket(bucket_name).put_object(Key=filename, Body=output)
         #cfnresponse.send(event, context, cfnresponse.SUCCESS, responseData, ".zip pulled to S3 Bucket!")
 
 
