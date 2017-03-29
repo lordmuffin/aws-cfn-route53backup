@@ -38,6 +38,7 @@ def newSplit(value):
 
 def lambda_handler(event, context):
     print "event.dump = " + json.dumps(event)
+    PATH=$PATH:/var/task
     command = event["command"]
     output, err, exit_code = run(command)
     if exit_code != 0:
