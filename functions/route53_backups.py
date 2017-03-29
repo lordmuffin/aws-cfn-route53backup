@@ -52,8 +52,7 @@ def lambda_handler(event, context):
         print "Output:"
         print output
         print "Upload to S3:"
-        buffer+= output
-        s3.Bucket(event["bucket_name"]).put_object(Key=filename, Body=buffer)
+        s3.Bucket(event["bucket_name"]).put_object(Key=filename, Body=output)
         #cfnresponse.send(event, context, cfnresponse.SUCCESS, responseData, ".zip pulled to S3 Bucket!")
 
 
