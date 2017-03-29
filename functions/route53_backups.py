@@ -17,11 +17,10 @@ def newSplit(value):
     return list(lex)
 
 def lambda_handler(event, context):
-    command = "./cli53 list"
+    command = event["ResourceProperties"]["command"]
     args = shlex.split(command)
     print args
     print(subprocess.check_output(args, stderr=subprocess.STDOUT))
-
 
 
 #import subprocess
