@@ -18,7 +18,7 @@ def newSplit(value):
 
 def lambda_handler(event, context):
     print "event.dump = " + json.dumps(event)
-    command = event["command"]
+    command = event["ResourceProperties"]["command"]
     args = shlex.split(command)
     print args
     print(subprocess.check_output(args, stderr=subprocess.STDOUT))
