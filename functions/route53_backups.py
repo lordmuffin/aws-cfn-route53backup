@@ -5,6 +5,7 @@ import boto3
 import json
 import cfnresponse
 from subprocess import Popen, PIPE
+from datetime import datetime
 import shlex
 s3 = boto3.resource('s3')
 
@@ -39,7 +40,7 @@ def newSplit(value):
 def lambda_handler(event, context):
     print "event.dump = " + json.dumps(event)
     command = "./cli53 export --full " + event["detail"]["requestParameters"]["hostedZoneId"]
-    filename = event["detail"]["requestParameters"]["hostedZoneId"]
+    filename = event["detail"]["requestParameters"]["hostedZoneId"] + datetime.now().isoformat()s
     bucket_name = "prod-route53-backups"
     output, err, exit_code = run(command)
     if exit_code != 0:
