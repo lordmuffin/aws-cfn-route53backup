@@ -39,16 +39,23 @@ def newSplit(value):
 def lambda_handler(event, context):
     print "event.dump = " + json.dumps(event)
     command = event["command"]
+    filename = event["hostedZoneId"]
     output, err, exit_code = run(command)
     if exit_code != 0:
-      print "Output:"
-      print output
-      print "Error:"
-      print err
-      # Handle error here
+        print "Output:"
+        print output
+        print "Upload to S3:"
+        buffer+= output
+        s3.Bucket(event["bucket_name"]).put_object(Key=filename, Body=buffer)
+        #cfnresponse.send(event, context, cfnresponse.SUCCESS, responseData, ".zip pulled to S3 Bucket!")
+        print "Error:"
+        print err
+        # Handle error here
     else:
-      # Be happy :D
-      print output
+        # Be happy :D
+        print output
+
+
 
 #import subprocess
 #command = ["./cli53", "list"]
