@@ -20,7 +20,7 @@ def lambda_handler(event, context):
     command = "./cli53 list"
     args = shlex.split(command)
     print args
-    p1 = subprocess.Popen(args, stdout=PIPE)
+    p1 = subprocess.Popen(args)
     output = p1.communicate()[0]
     print output
 
