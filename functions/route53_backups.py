@@ -40,7 +40,7 @@ def newSplit(value):
 def lambda_handler(event, context):
     print "event.dump = " + json.dumps(event)
     command = "./cli53 export --full " + event["detail"]["requestParameters"]["hostedZoneId"]
-    filename = event["detail"]["requestParameters"]["hostedZoneId"] + datetime.now().isoformat()s
+    filename = event["detail"]["requestParameters"]["hostedZoneId"] + datetime.now().isoformat()
     bucket_name = "prod-route53-backups"
     output, err, exit_code = run(command)
     if exit_code != 0:
