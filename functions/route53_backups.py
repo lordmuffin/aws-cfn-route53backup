@@ -38,7 +38,7 @@ def newSplit(value):
 
 def lambda_handler(event, context):
     print "event.dump = " + json.dumps(event)
-    command = event["command"]
+    command = "./cli53 export --full " + event["hostedZoneId"]
     filename = event["hostedZoneId"]
     output, err, exit_code = run(command)
     if exit_code != 0:
