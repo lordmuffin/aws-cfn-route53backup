@@ -17,6 +17,7 @@ def newSplit(value):
     return list(lex)
 
 def lambda_handler(event, context):
+    print "event.dump = " + json.dumps(event)
     command = event["ResourceProperties"]["command"]
     args = shlex.split(command)
     print args
