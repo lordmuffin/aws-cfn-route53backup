@@ -23,4 +23,4 @@ deployment:
   s3up:
     branch: master
     commands:
-      - s3up --destination $CIRCLE_PROJECT_REPONAME/$CIRCLE_BRANCH --bucket $BUCKET --strip 3 $UPLOAD/*
+      - s3up --destination $CIRCLE_PROJECT_REPONAME/$CIRCLE_BRANCH --bucket $BUCKET --strip 4 $UPLOAD/*
